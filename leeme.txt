@@ -1,3 +1,8 @@
+Siguiente video:
+
+https://www.youtube.com/watch?v=nANAMiWwyU8&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=52
+
+====================================================================================
 - Ir a la carpeta donde queramos crear el proyecto e instalar Laravel. Se nos creará
 una nueva carpeta con el nombre del proyecto. Añadir --jet para usar Jetstream
 

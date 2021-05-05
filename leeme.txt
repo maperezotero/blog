@@ -1,0 +1,90 @@
+- Ir a la carpeta donde queramos crear el proyecto e instalar Laravel. Se nos creará
+una nueva carpeta con el nombre del proyecto. Añadir --jet para usar Jetstream
+
+laravel new blog --jet
+
+- Elegir 0 para trabajar con livewire
+
+- Elegir no si no se quiere trabajar con equipos
+
+- Entrar a la carpeta del proyecto y ejecutar los comandos npm install y npm run dev
+
+cd blog
+npm install
+
+- Crear base de datos blog y configurar el archivo .env con los datos de conexión
+a la BD
+
+- Realizar las migraciones
+php artisan migrate
+
+- Ejecutar el comando 
+npm run dev
+
+- Primero crear las tablas de las entidades fuertes, las que no dependen de otras entidades.
+- Crear la entidad categorias
+- Generar el modelo Category con una migración -m
+php artisan make:model Category -m
+
+- Crear los campos de la tabla categorias en el archivo de migración
+
+- Generar el modelo Post con una migración -m
+php artisan make:model Post -m
+
+- Crear los campos de la tabla posts en el archivo de migración
+
+- Generar el modelo Tag con una migración -m
+php artisan make:model Tag -m
+
+- Crear los campos de la tabla tags en el archivo de migración
+
+- Crear una migración para la tabla para la relación de posts con tags
+php artisan make:migration create_post_tag_table
+
+- Generar las claves foráneas en el archivo de migración creado
+
+- Generar el modelo Image con una migración -m
+php artisan make:model Image -m
+
+- Crear los campos de la tabla images en el archivo de migración
+
+- Realizar las migraciones
+php artisan migrate
+
+- Empezar a trabajar con los modelos
+
+- Introducir los datos de pureba mediante los factorys
+
+php artisan make:factory CategoryFactory
+php artisan make:factory PostFactory
+php artisan make:factory TagFactory
+php artisan make:factory ImageFactory
+
+- Trabajar con los factorys
+
+- Configurar la subida de imágenes
+- Editar el archivo config->filesystems.php
+- Cambiar la línea: 'default' => env('FILESYSTEM_DRIVER', 'local'),
+- Por: 'default' => env('FILESYSTEM_DRIVER', 'public'),
+
+- Configurar los seeders en database->seeders->DatabaseSeeder.php
+
+- Crear seeder
+php artisan make:seeder UserSeeder
+
+php artisan make:seeder PostSeeder
+
+- Ejecutar los seeders
+php artisan migrate:fresh --seed
+
+
+
+
+
+
+
+
+
+
+
+

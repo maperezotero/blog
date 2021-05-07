@@ -3,11 +3,11 @@
 @section('title', 'SuperBit')
 
 @section('content_header')
-    <h1>Detalle del post</h1>
+    <h1>Lista de usuarios</h1>
 @stop
 
 @section('content')
-    <p>Bienvenido al panel de control.</p>
+    @livewire('admin.users-index')
 @stop
 
 @section('css')

@@ -1,6 +1,6 @@
 Siguiente video:
 
-https://www.youtube.com/watch?v=L42lLOOLB8g&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=62
+https://www.youtube.com/watch?v=r5Zs9CGB754&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=63
 
 ====================================================================================
 - Ir a la carpeta donde queramos crear el proyecto e instalar Laravel. Se nos creará

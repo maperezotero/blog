@@ -84,15 +84,3 @@ php artisan make:seeder PostSeeder
 
 - Ejecutar los seeders
 php artisan migrate:fresh --seed
-
-
-
-
-
-
-
-
-
-
-
-
